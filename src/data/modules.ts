@@ -3,16 +3,26 @@ import type { Module } from '../types';
 export const modules: Module[] = [
   {
     id: 'bias-discovery',
-    title: 'Discover Your Own Biases',
-    description: 'Start by understanding your own thinking patterns and how they might influence what you believe.',
+    title: 'The Psychology of Belief',
+    description: 'Discover how your brain processes information and why you might believe things that aren\'t true.',
     sections: [
       {
         id: 'intro',
         type: 'text',
-        content: 'Before we examine media claims, let\'s first understand how our own minds work. We all have biases that can make us more likely to believe certain types of information, even when it\'s not accurate.'
+        content: '**Why do smart people believe false things?**\n\nIt\'s not about intelligence - it\'s about psychology. Your brain has evolved to protect your worldview, not to seek truth. Understanding this is the first step to thinking more clearly.\n\n**The Problem:** When facts contradict your beliefs, your brain doesn\'t just accept the facts. Instead, it works overtime to protect your existing worldview.'
       },
       {
-        id: 'bias-test-1',
+        id: 'cognitive-dissonance',
+        type: 'text',
+        content: '**Cognitive Dissonance: The Mental Discomfort**\n\nWhen you encounter information that conflicts with your beliefs, your brain experiences **cognitive dissonance** - a feeling of mental discomfort.\n\n**Your brain has three options:**\n1. **Accept the new information** (requires changing your mind)\n2. **Reject the information** (easier, protects your worldview)\n3. **Rationalize** (find ways to make both beliefs coexist)\n\n**Most people choose options 2 or 3** because changing your mind feels like admitting you were wrong - and that\'s psychologically painful.'
+      },
+      {
+        id: 'experiment-1',
+        type: 'thoughtExperiment',
+        prompt: 'Think of a time when someone showed you evidence that contradicted something you believed. What was your first reaction? Did you immediately accept the evidence, or did you feel defensive? How did you resolve the conflict?'
+      },
+      {
+        id: 'confirmation-bias-test',
         type: 'quiz',
         questions: [
           {
@@ -30,39 +40,114 @@ export const modules: Module[] = [
         ]
       },
       {
-        id: 'bias-test-2',
+        id: 'backfire-effect',
+        type: 'text',
+        content: '**The Backfire Effect: When Facts Make Things Worse**\n\n**Here\'s the scary part:** Sometimes when you show people facts that contradict their beliefs, they become **more convinced** of their original position.\n\n**Why this happens:**\n• Presenting facts can feel like an attack on their identity\n• Their brain works harder to protect their worldview\n• They seek out information that confirms their original belief\n• They remember the "attack" but not the facts\n\n**The Solution:** Instead of just presenting facts, we need to understand the psychological barriers first.'
+      },
+      {
+        id: 'social-identity',
+        type: 'text',
+        content: '**Social Identity: Why Facts Don\'t Matter**\n\nYour political beliefs aren\'t just opinions - they\'re part of your **identity**. When someone challenges your political views, it feels like they\'re attacking **who you are**.\n\n**The Identity Trap:**\n• "I\'m a conservative/liberal" becomes part of your self-concept\n• Information that contradicts your group feels like a personal attack\n• You defend your group\'s beliefs to protect your identity\n• Facts become secondary to group loyalty\n\n**Breaking Free:** The key is separating your identity from your beliefs. You can change your mind without changing who you are.'
+      },
+      {
+        id: 'reflection-2',
+        type: 'thoughtExperiment',
+        prompt: 'Think about your political identity. How much of "who you are" is tied to your political beliefs? What would it feel like to change your mind on a major political issue? What would your friends and family think?'
+      }
+    ]
+  },
+  {
+    id: 'media-manipulation',
+    title: 'The Psychology of Media Manipulation',
+    description: 'Discover how media uses psychological techniques to control what you think and how you feel.',
+    sections: [
+      {
+        id: 'intro',
+        type: 'text',
+        content: '**Media doesn\'t just inform you - it programs you.**\n\nEvery headline, every story, every image is carefully crafted to trigger specific psychological responses. Understanding these techniques is your first defense against manipulation.\n\n**The Goal:** To make you think you\'re making independent decisions while actually controlling your thoughts and emotions.'
+      },
+      {
+        id: 'agenda-setting',
+        type: 'text',
+        content: '**Agenda Setting: Controlling What You Think About**\n\n**The Theory:** Media doesn\'t tell you what to think - it tells you **what to think about**.\n\n**How it works:**\n• Media chooses which issues get attention\n• Issues that get repeated coverage seem more important\n• You start believing these are the "real" problems\n• Other issues disappear from your awareness\n\n**Example:** If media constantly covers "border crisis" stories, you start believing immigration is the most important issue, regardless of actual statistics.\n\n**The Psychological Effect:** Your brain naturally assumes that what gets attention is what matters most.'
+      },
+      {
+        id: 'priming',
+        type: 'text',
+        content: '**Priming: Setting Up Your Brain**\n\n**Priming** is when media puts you in a specific mental state before presenting information.\n\n**The Process:**\n1. **Emotional Trigger** - "BREAKING: Shocking development that will outrage you"\n2. **Mental State** - You\'re now angry and ready to be outraged\n3. **Information** - Facts presented while you\'re emotionally charged\n4. **Result** - You process information through the lens of anger\n\n**Why it works:** Your brain processes information differently when you\'re emotional vs. when you\'re calm.\n\n**The Pattern:** Emotional word → Emotional state → Biased processing'
+      },
+      {
+        id: 'cultivation-theory',
+        type: 'text',
+        content: '**Cultivation Theory: The "Mean World Syndrome"**\n\n**The Theory:** The more media you consume, the more you believe the world is dangerous and threatening.\n\n**How it works:**\n• Media over-reports crime, violence, and threats\n• You start believing the world is more dangerous than it actually is\n• This makes you more receptive to "tough" solutions and authoritarian leaders\n• You become more fearful and less trusting\n\n**The Research:** Heavy media consumers consistently overestimate crime rates and believe the world is more dangerous than statistics show.\n\n**The Psychological Effect:** Fear makes you more likely to accept extreme solutions and less likely to question authority.'
+      },
+      {
+        id: 'emotional-manipulation',
+        type: 'text',
+        content: '**Emotional Manipulation: The Feelings Game**\n\n**The Strategy:** Control emotions to control thoughts.\n\n**Key Emotions Used:**\n\n**1. Fear**\n• Makes you feel threatened and vulnerable\n• Increases receptivity to "protection" messages\n• Reduces critical thinking\n\n**2. Anger**\n• Motivates action and sharing\n• Creates "us vs them" thinking\n• Makes you feel morally superior\n\n**3. Outrage**\n• Triggers the "justice" response in your brain\n• Makes you want to "punish" the "bad guys"\n• Reduces empathy for the "other side"\n\n**4. Hope**\n• Makes you feel good about supporting certain causes\n• Creates emotional investment in specific outcomes\n• Reduces skepticism about promises\n\n**The Pattern:** Trigger emotion → Present "facts" → Emotional processing → Biased conclusions'
+      },
+      {
+        id: 'framing-examples',
+        type: 'text',
+        content: '**Framing: The Power of Perspective**\n\n**The Concept:** How you present information dramatically affects how people interpret it.\n\n**Real Examples:**\n\n**Tax Policy:**\n• "Tax cuts for the wealthy" (emphasizes inequality)\n• "Tax relief for job creators" (emphasizes economic benefits)\n\n**Healthcare:**\n• "Government takeover of healthcare" (emphasizes loss of choice)\n• "Universal healthcare coverage" (emphasizes access for all)\n\n**Immigration:**\n• "Illegal aliens" (emphasizes law-breaking)\n• "Undocumented workers" (emphasizes economic contribution)\n\n**The Psychological Effect:** Your brain processes these as completely different issues, even though they\'re describing the same policies.'
+      },
+      {
+        id: 'quote-analysis',
+        type: 'quote',
+        text: 'The best way to control people is to control what they think about.',
+        source: 'Noam Chomsky',
+        context: 'Chomsky was discussing how media sets the agenda for public discussion, determining not what people think, but what they think about.',
+        fullQuote: 'The best way to control people is to control what they think about. The media doesn\'t tell you what to think, it tells you what to think about.',
+        date: '1988',
+        location: 'Manufacturing Consent',
+        occasion: 'Book publication'
+      },
+      {
+        id: 'techniques-quiz',
         type: 'quiz',
         questions: [
           {
-            id: 'q2',
-            question: 'If you see a headline that makes you angry about the "other side," what should you do?',
+            id: 'q1',
+            question: 'When a headline says "BREAKING: Shocking new development that will outrage you," what technique is being used?',
             options: [
-              'Share it immediately to warn others',
-              'Read the full article before forming an opinion',
-              'Assume it\'s true because it confirms your beliefs',
-              'Look for the original source and context'
+              'Factual reporting',
+              'Emotional priming',
+              'Neutral presentation',
+              'Balanced analysis'
             ],
-            correctAnswer: 3,
-            explanation: 'Emotional headlines are often designed to trigger bias. Always seek the original source and full context.'
+            correctAnswer: 1,
+            explanation: 'This is emotional priming - using words like "shocking" and "outrage" to put you in an emotional state before presenting information.'
+          },
+          {
+            id: 'q2',
+            question: 'If media constantly covers crime stories, what psychological effect does this have on viewers?',
+            options: [
+              'They become more informed about actual crime rates',
+              'They develop the "mean world syndrome"',
+              'They become less interested in politics',
+              'They become more trusting of authority'
+            ],
+            correctAnswer: 1,
+            explanation: 'This is cultivation theory - heavy media consumers believe the world is more dangerous than it actually is.'
           }
         ]
       },
       {
-        id: 'reflection-1',
+        id: 'reflection-3',
         type: 'thoughtExperiment',
-        prompt: 'Think about the last time you shared a political post on social media. What made you believe it was true? Did you check the source or verify the claims before sharing?'
+        prompt: 'Think about the last time you felt angry or afraid after consuming media. What specific words or images triggered those emotions? How did those emotions affect how you processed the information that followed?'
       }
     ]
   },
   {
     id: 'election-fraud-claims',
-    title: 'Examining Election Fraud Claims',
-    description: 'Let\'s look at specific claims about election fraud and trace them back to their sources.',
+    title: 'The Psychology of Election Fraud Claims',
+    description: 'How false claims spread and why people believe them - a case study in mass deception.',
     sections: [
       {
         id: 'intro',
         type: 'text',
-        content: 'After the 2020 election, many claims about fraud circulated widely. Let\'s examine some of the most prominent ones and trace them back to their original sources.'
+        content: '**The 2020 Election: A Masterclass in Mass Deception**\n\nAfter the 2020 election, false claims about fraud spread like wildfire. But this wasn\'t random - it was a **systematic campaign** using psychological techniques to manipulate public opinion.\n\n**The Pattern:** Take isolated incidents, exaggerate them into widespread problems, repeat them constantly, and create a false narrative that feels true through sheer repetition.\n\n**Why it worked:** The claims tapped into existing fears and biases, creating a "reality" that felt more compelling than actual facts.'
       },
       {
         id: 'claim-1',
@@ -482,6 +567,84 @@ export const modules: Module[] = [
             ],
             correctAnswer: 1,
             explanation: 'Always pause to check your emotional reaction first, then fact-check using reliable sources before forming an opinion.'
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: 'psychological-manipulation',
+    title: 'The Psychology of Right-Wing Media',
+    description: 'How right-wing media uses psychological techniques to manipulate beliefs and emotions.',
+    sections: [
+      {
+        id: 'intro',
+        type: 'text',
+        content: '**The Psychology of Right-Wing Media Manipulation**\n\nRight-wing media doesn\'t just report news - it uses sophisticated psychological techniques to shape how you think and feel. Understanding these methods is crucial for resisting manipulation.\n\n**The Strategy:** Create emotional responses that bypass critical thinking, then present "facts" while you\'re in an altered mental state.'
+      },
+      {
+        id: 'repetition-technique',
+        type: 'text',
+        content: '**The Repetition Technique: The Big Lie**\n\n**The Method:** Repeat false claims constantly until they feel true.\n\n**How it works:**\n• **Psychological Principle:** Repetition increases familiarity\n• **Familiarity breeds acceptance** - things that feel familiar seem more true\n• **The "illusory truth effect"** - repeated statements are judged as more truthful\n\n**Example:** "The election was stolen" repeated thousands of times across multiple platforms.\n\n**The Effect:** Even when people know something is false, constant repetition can make them doubt their own knowledge.'
+      },
+      {
+        id: 'emotional-priming',
+        type: 'text',
+        content: '**Emotional Priming: Setting the Mood**\n\n**The Technique:** Put you in an emotional state before presenting information.\n\n**The Process:**\n1. **Trigger emotion** - "BREAKING: Shocking betrayal of America"\n2. **Create mental state** - You\'re now angry and defensive\n3. **Present "facts"** - Information processed through anger\n4. **Result** - Biased interpretation of information\n\n**Why it works:** Your brain processes information differently when emotional vs. calm.\n\n**The Pattern:** Emotional trigger → Altered mental state → Biased processing'
+      },
+      {
+        id: 'us-vs-them',
+        type: 'text',
+        content: '**Us vs. Them: Tribal Psychology**\n\n**The Technique:** Create clear "good guys" and "bad guys" to trigger tribal instincts.\n\n**How it works:**\n• **"Real Americans" vs. "elites"**\n• **"Patriots" vs. "traitors"**\n• **"Hard workers" vs. "lazy takers"**\n\n**The Psychological Effect:**\n• Triggers **in-group loyalty** and **out-group hostility**\n• Makes you defend your "team" regardless of facts\n• Reduces empathy for the "other side"\n• Increases willingness to accept extreme solutions\n\n**The Pattern:** Create division → Trigger tribal instincts → Reduce critical thinking'
+      },
+      {
+        id: 'victim-narrative',
+        type: 'text',
+        content: '**The Victim Narrative: Persecution Complex**\n\n**The Technique:** Present your audience as victims of a conspiracy.\n\n**The Narrative:**\n• "They" are out to get "us"\n• "They" control the media, education, government\n• "They" want to destroy "our" way of life\n• "We" are the last defenders of truth\n\n**The Psychological Effect:**\n• Creates **persecution complex**\n• Justifies extreme responses\n• Makes people feel special and important\n• Reduces skepticism about claims\n\n**The Pattern:** Identify enemy → Create victim narrative → Justify extreme actions'
+      },
+      {
+        id: 'quote-example',
+        type: 'quote',
+        text: 'The best way to control people is to control what they think about.',
+        source: 'Noam Chomsky',
+        context: 'Chomsky was discussing how media sets the agenda for public discussion, determining not what people think, but what they think about.',
+        fullQuote: 'The best way to control people is to control what they think about. The media doesn\'t tell you what to think, it tells you what to think about.',
+        date: '1988',
+        location: 'Manufacturing Consent',
+        occasion: 'Book publication'
+      },
+      {
+        id: 'reflection-psychology',
+        type: 'thoughtExperiment',
+        prompt: 'Think about the last time you felt angry or defensive while consuming media. What specific words or phrases triggered those emotions? How did those emotions affect how you processed the information that followed?'
+      },
+      {
+        id: 'psychology-quiz',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q1',
+            question: 'When media constantly repeats a claim, what psychological effect does this have?',
+            options: [
+              'It makes people more skeptical',
+              'It creates the "illusory truth effect"',
+              'It has no effect on belief',
+              'It makes people fact-check more'
+            ],
+            correctAnswer: 1,
+            explanation: 'The "illusory truth effect" means repeated statements are judged as more truthful, even when people know they\'re false.'
+          },
+          {
+            id: 'q2',
+            question: 'What happens when media creates "us vs them" narratives?',
+            options: [
+              'People become more open to different viewpoints',
+              'It triggers tribal instincts and reduces critical thinking',
+              'It encourages fact-checking',
+              'It has no psychological effect'
+            ],
+            correctAnswer: 1,
+            explanation: 'Tribal psychology makes people defend their "team" regardless of facts and reduces empathy for the "other side."'
           }
         ]
       }
