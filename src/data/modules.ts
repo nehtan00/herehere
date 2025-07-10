@@ -300,5 +300,156 @@ export const modules: Module[] = [
         ]
       }
     ]
+  },
+  {
+    id: 'misinformation-detection-test',
+    title: 'Test Your Misinformation Detection',
+    description: 'Practice identifying lies and misinformation with real-world examples.',
+    sections: [
+      {
+        id: 'intro',
+        type: 'text',
+        content: 'Now let\'s test your skills! Below are real claims from recent news and social media. For each one, decide whether you think it\'s true, false, or misleading, then we\'ll reveal the facts.'
+      },
+      {
+        id: 'test-1',
+        type: 'quote',
+        text: '"Biden wants to ban all gas stoves and force everyone to use electric!"',
+        source: 'Social media posts, 2023'
+      },
+      {
+        id: 'quiz-test-1',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q1',
+            question: 'Is this claim true, false, or misleading?',
+            options: [
+              'True - Biden is banning gas stoves',
+              'False - Biden never proposed banning gas stoves',
+              'Misleading - There was a study about gas stove emissions, but no ban was proposed',
+              'I\'m not sure'
+            ],
+            correctAnswer: 2,
+            explanation: 'This is misleading. A federal agency studied gas stove emissions, but no ban was ever proposed. The claim exaggerates a study into a non-existent policy.'
+          }
+        ]
+      },
+      {
+        id: 'fact-check-test-1',
+        type: 'text',
+        content: '**The Facts:**\n\n• The Department of Energy studied energy efficiency standards for appliances\n• No ban on gas stoves was ever proposed\n• The study was about potential future efficiency standards\n• Existing gas stoves would not be affected\n\nThis is a classic example of taking a legitimate study and twisting it into a false claim about government overreach.'
+      },
+      {
+        id: 'test-2',
+        type: 'quote',
+        text: '"Democrats are importing millions of illegal immigrants to vote in elections!"',
+        source: 'Right-wing media, 2024'
+      },
+      {
+        id: 'quiz-test-2',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q2',
+            question: 'Is this claim true, false, or misleading?',
+            options: [
+              'True - Democrats are importing voters',
+              'False - Undocumented immigrants cannot vote in federal elections',
+              'Misleading - There are some local jurisdictions that allow non-citizen voting',
+              'I\'m not sure'
+            ],
+            correctAnswer: 1,
+            explanation: 'This is false. Undocumented immigrants cannot vote in federal elections. The claim is a conspiracy theory with no evidence.'
+          }
+        ]
+      },
+      {
+        id: 'fact-check-test-2',
+        type: 'text',
+        content: '**The Facts:**\n\n• Federal law requires U.S. citizenship to vote in federal elections\n• Undocumented immigrants cannot register to vote\n• There is no evidence of widespread voter fraud by immigrants\n• Some local jurisdictions allow non-citizen voting in local elections only\n\nThis claim is a baseless conspiracy theory designed to create fear about election integrity.'
+      },
+      {
+        id: 'test-3',
+        type: 'quote',
+        text: '"The 2020 election was stolen through massive voter fraud!"',
+        source: 'Donald Trump and supporters, 2020-2024'
+      },
+      {
+        id: 'quiz-test-3',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q3',
+            question: 'Is this claim true, false, or misleading?',
+            options: [
+              'True - There was massive fraud',
+              'False - Multiple investigations found no evidence of widespread fraud',
+              'Misleading - There were some isolated cases but not enough to change the result',
+              'I\'m not sure'
+            ],
+            correctAnswer: 1,
+            explanation: 'This is false. Multiple investigations, audits, and court cases found no evidence of widespread voter fraud that could have changed the election result.'
+          }
+        ]
+      },
+      {
+        id: 'fact-check-test-3',
+        type: 'text',
+        content: '**The Facts:**\n\n• 60+ court cases challenging the election were dismissed or lost\n• Multiple recounts in key states confirmed the results\n• Trump\'s own Department of Justice found no evidence of fraud\n• Election officials from both parties certified the results\n\nThis claim has been thoroughly debunked by evidence from multiple sources.'
+      },
+      {
+        id: 'test-4',
+        type: 'quote',
+        text: '"COVID vaccines contain microchips to track people!"',
+        source: 'Social media conspiracy theories, 2021'
+      },
+      {
+        id: 'quiz-test-4',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q4',
+            question: 'Is this claim true, false, or misleading?',
+            options: [
+              'True - The vaccines contain tracking devices',
+              'False - Vaccines cannot contain microchips',
+              'Misleading - There might be some tracking technology',
+              'I\'m not sure'
+            ],
+            correctAnswer: 1,
+            explanation: 'This is false. Vaccines are liquid solutions that cannot contain microchips. The claim is a baseless conspiracy theory.'
+          }
+        ]
+      },
+      {
+        id: 'fact-check-test-4',
+        type: 'text',
+        content: '**The Facts:**\n\n• Vaccines are liquid solutions injected with needles\n• Microchips cannot be injected through needles\n• The vaccine ingredients are publicly available\n• No tracking technology exists that could work this way\n\nThis is a classic conspiracy theory that ignores basic science and technology.'
+      },
+      {
+        id: 'reflection-final',
+        type: 'thoughtExperiment',
+        prompt: 'How did you do on these tests? Were you surprised by any of the correct answers? What patterns did you notice in the false claims?'
+      },
+      {
+        id: 'quiz-final',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q5',
+            question: 'What\'s the best approach when you encounter a shocking claim?',
+            options: [
+              'Share it immediately to warn others',
+              'Pause, check your emotional reaction, then fact-check',
+              'Assume it\'s true if it comes from trusted sources',
+              'Look for sources that confirm your existing beliefs'
+            ],
+            correctAnswer: 1,
+            explanation: 'Always pause to check your emotional reaction first, then fact-check using reliable sources before forming an opinion.'
+          }
+        ]
+      }
+    ]
   }
 ]; 
