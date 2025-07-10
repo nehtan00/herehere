@@ -7,6 +7,7 @@ import { QuoteDisplay } from '../components/QuoteDisplay';
 import { Video } from '../components/Video';
 import { ArrowLeft, ArrowRight, Home, Link, HelpCircle } from 'lucide-react';
 import { Quiz } from '../components/Quiz';
+import ReactMarkdown from 'react-markdown';
 
 export const ModulePage: React.FC = () => {
   const { 
@@ -73,9 +74,7 @@ export const ModulePage: React.FC = () => {
         return (
           <Card>
             <div className="prose max-w-none">
-              <p className="text-gray-700 leading-relaxed">
-                {currentSectionData.content}
-              </p>
+              <ReactMarkdown>{currentSectionData.content || ''}</ReactMarkdown>
             </div>
           </Card>
         );
