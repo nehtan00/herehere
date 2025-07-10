@@ -21,92 +21,152 @@ export const TestsPage: React.FC = () => {
 
   const quizzes: QuizData[] = [
     {
-      id: 'bias-1',
-      question: 'What is confirmation bias?',
+      id: 'fox-election-1',
+      question: 'Fox News (2020): "There is massive evidence of widespread voter fraud in the 2020 election." Is this claim true, false, or misleading?',
       options: [
         {
           id: 'a',
-          text: 'The tendency to search for, interpret, and remember information that confirms our preexisting beliefs',
-          isCorrect: true,
-          explanation: 'Confirmation bias is a cognitive bias where people tend to favor information that confirms their existing beliefs or hypotheses.'
+          text: 'True - There was massive fraud',
+          isCorrect: false,
+          explanation: 'False. Multiple audits, recounts, and over 60 court cases found no evidence of widespread fraud. The Cybersecurity and Infrastructure Security Agency called the 2020 election "the most secure in American history." [CISA Statement](https://www.cisa.gov/news-events/news/statement-election-security-officials-november-12-2020)'
         },
         {
           id: 'b',
-          text: 'The tendency to avoid making decisions',
-          isCorrect: false,
-          explanation: 'This describes decision paralysis, not confirmation bias.'
+          text: 'False - There was no evidence of widespread fraud',
+          isCorrect: true,
+          explanation: 'Correct. All credible investigations found no evidence of widespread fraud.'
         },
         {
           id: 'c',
-          text: 'The tendency to trust authority figures',
+          text: 'Misleading - There were some isolated incidents',
           isCorrect: false,
-          explanation: 'This describes authority bias, not confirmation bias.'
-        },
-        {
-          id: 'd',
-          text: 'The tendency to follow the crowd',
-          isCorrect: false,
-          explanation: 'This describes herd mentality or groupthink, not confirmation bias.'
+          explanation: 'While isolated incidents exist in every election, there was no evidence of fraud on a scale that could affect the outcome.'
         }
       ]
     },
     {
-      id: 'media-1',
-      question: 'Which of the following is a red flag for potential misinformation?',
+      id: 'fox-aca-1',
+      question: 'Fox News (2010): "Obamacare is a government takeover of healthcare that will put bureaucrats between you and your doctor." Is this claim true, false, or misleading?',
       options: [
         {
           id: 'a',
-          text: 'The article cites multiple credible sources',
+          text: 'True - The ACA is a government takeover',
           isCorrect: false,
-          explanation: 'Citing credible sources is actually a good sign of reliable information.'
+          explanation: 'False. The ACA builds on private insurance, does not create a government-run system, and doctors/hospitals remain private. [KFF: ACA Myths](https://www.kff.org/health-reform/issue-brief/obamacare-myths/)'
         },
         {
           id: 'b',
-          text: 'The headline uses emotional language and makes extraordinary claims',
+          text: 'False - The ACA builds on private insurance',
           isCorrect: true,
-          explanation: 'Emotional language and extraordinary claims without evidence are common red flags for misinformation.'
+          explanation: 'Correct. The ACA expands private insurance coverage and sets rules for insurers.'
         },
         {
           id: 'c',
-          text: 'The article was published recently',
+          text: 'Misleading - It increases regulation but is not a takeover',
           isCorrect: false,
-          explanation: 'Recent publication date alone is not a red flag.'
-        },
-        {
-          id: 'd',
-          text: 'The article includes statistics',
-          isCorrect: false,
-          explanation: 'Statistics can be legitimate, though they should be properly sourced and contextualized.'
+          explanation: 'The ACA does increase regulation, but the claim of a "government takeover" is false.'
         }
       ]
     },
     {
-      id: 'critical-1',
-      question: 'What is the first step in critical thinking?',
+      id: 'fox-immigration-1',
+      question: 'Fox News (2018): "A massive caravan of migrants is storming toward our border. What will this mean for your safety?" Is this framing accurate?',
       options: [
         {
           id: 'a',
-          text: 'Forming an opinion immediately',
+          text: 'True - The caravan was a major criminal threat',
           isCorrect: false,
-          explanation: 'Jumping to conclusions is the opposite of critical thinking.'
+          explanation: 'False. The caravan was mostly composed of families seeking asylum, not criminals. Crime rates among immigrants are lower than among native-born Americans. [Cato Institute, 2018](https://www.cato.org/blog/illegal-immigrants-us-crime-rates-are-lower-citizens)'
         },
         {
           id: 'b',
-          text: 'Identifying the question or problem clearly',
+          text: 'False - The framing was designed to create fear',
           isCorrect: true,
-          explanation: 'Clearly understanding what you\'re trying to figure out is the foundation of critical thinking.'
+          explanation: 'Correct. The segment used emotional priming to create fear, not reflect reality.'
         },
         {
           id: 'c',
-          text: 'Finding evidence that supports your view',
+          text: 'Misleading - There was a caravan, but the threat was exaggerated',
           isCorrect: false,
-          explanation: 'This describes confirmation bias, not critical thinking.'
+          explanation: 'The threat was exaggerated; the framing was misleading and fear-based.'
+        }
+      ]
+    },
+    {
+      id: 'fox-climate-1',
+      question: 'Fox News (2022): "Climate change is a hoax invented by China to destroy American industry." Is this claim true, false, or misleading?',
+      options: [
+        {
+          id: 'a',
+          text: 'True - It is a hoax',
+          isCorrect: false,
+          explanation: 'False. Climate change is supported by overwhelming scientific evidence from NASA, NOAA, and thousands of scientists worldwide. [NASA Climate Evidence](https://climate.nasa.gov/evidence/)'
+        },
+        {
+          id: 'b',
+          text: 'False - Climate change is real and not a hoax',
+          isCorrect: true,
+          explanation: 'Correct. The claim is a conspiracy theory with no basis in fact.'
+        },
+        {
+          id: 'c',
+          text: 'Misleading - China benefits from climate policy',
+          isCorrect: false,
+          explanation: 'China is investing heavily in renewable energy; the claim is not supported by evidence.'
+        }
+      ]
+    },
+    {
+      id: 'fox-crime-1',
+      question: 'Fox News (2022): "Crime is out of control in cities run by Democrats. You’re not safe anymore." Is this claim supported by crime data?',
+      options: [
+        {
+          id: 'a',
+          text: 'True - Crime is at historic highs in these cities',
+          isCorrect: false,
+          explanation: 'False. Crime rates in many cities have been falling for decades, and violent crime is not at historic highs. [Bureau of Justice Statistics](https://bjs.ojp.gov/).'
+        },
+        {
+          id: 'b',
+          text: 'False - The claim is exaggerated and not supported by data',
+          isCorrect: true,
+          explanation: 'Correct. The perception of rising crime is often out of proportion to actual data.'
+        },
+        {
+          id: 'c',
+          text: 'Misleading - Some cities have seen increases, but not all',
+          isCorrect: false,
+          explanation: 'Some cities have seen increases, but the overall claim is misleading.'
+        }
+      ]
+    },
+    {
+      id: 'fox-christian-1',
+      question: 'Which of the following is a direct teaching of Jesus (according to the Bible)?',
+      options: [
+        {
+          id: 'a',
+          text: '“Love your enemies and pray for those who persecute you.”',
+          isCorrect: true,
+          explanation: '“Love your enemies and pray for those who persecute you.” (Matthew 5:44) is a direct teaching of Jesus.'
+        },
+        {
+          id: 'b',
+          text: '“An eye for an eye, a tooth for a tooth.”',
+          isCorrect: false,
+          explanation: '“An eye for an eye” is Old Testament law, not a teaching of Jesus.'
+        },
+        {
+          id: 'c',
+          text: '“God helps those who help themselves.”',
+          isCorrect: false,
+          explanation: '“God helps those who help themselves” is not in the Bible.'
         },
         {
           id: 'd',
-          text: 'Asking others what they think',
+          text: '“Render unto Caesar what is Caesar’s, and unto God what is God’s.”',
           isCorrect: false,
-          explanation: 'While gathering perspectives can be helpful, it\'s not the first step in critical thinking.'
+          explanation: 'While this is a teaching of Jesus (Matthew 22:21), the first option is the most direct call to radical love.'
         }
       ]
     }
