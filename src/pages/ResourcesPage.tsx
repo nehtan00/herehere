@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card } from '../components/Card';
 import { 
   BookOpen, 
@@ -30,6 +30,13 @@ export const ResourcesPage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState('');
 
+  // Debug logging
+  useEffect(() => {
+    console.log('ResourcesPage loaded');
+    console.log('Resources data:', resources);
+    console.log('Resources count:', resources.length);
+  }, []);
+
   const categories = [
     { id: 'all', name: 'All Resources' },
     { id: 'fact-checking', name: 'Fact-Checking' },
@@ -48,6 +55,8 @@ export const ResourcesPage: React.FC = () => {
                          resource.description.toLowerCase().includes(searchTerm.toLowerCase());
     return matchesCategory && matchesSearch;
   });
+
+  console.log('Filtered resources:', filteredResources);
 
   return (
     <div className="space-y-6 fade-in">
