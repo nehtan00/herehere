@@ -4,6 +4,7 @@ import { Button } from '../components/Button';
 import { useAppContext } from '../contexts/AppContext';
 import { ThoughtExperimentDisplay } from '../components/ThoughtExperimentDisplay';
 import { QuoteDisplay } from '../components/QuoteDisplay';
+import { Video } from '../components/Video';
 import { ArrowLeft, ArrowRight, Home, Link, HelpCircle } from 'lucide-react';
 import { Quiz } from '../components/Quiz';
 
@@ -61,6 +62,11 @@ export const ModulePage: React.FC = () => {
           <QuoteDisplay
             text={currentSectionData.text || ''}
             source={currentSectionData.source || ''}
+            fullQuote={currentSectionData.fullQuote}
+            context={currentSectionData.context}
+            date={currentSectionData.date}
+            location={currentSectionData.location}
+            occasion={currentSectionData.occasion}
           />
         );
       case 'text':
@@ -106,6 +112,18 @@ export const ModulePage: React.FC = () => {
             onComplete={(score: number, total: number) => {
               console.log(`Quiz completed with score: ${score}/${total}`);
             }}
+          />
+        );
+      case 'video':
+        return (
+          <Video
+            videoUrl={currentSectionData.videoUrl || ''}
+            videoTitle={currentSectionData.videoTitle || ''}
+            videoDescription={currentSectionData.videoDescription || ''}
+            context={currentSectionData.context}
+            date={currentSectionData.date}
+            location={currentSectionData.location}
+            occasion={currentSectionData.occasion}
           />
         );
       default:

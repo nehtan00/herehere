@@ -1,6 +1,6 @@
 export interface ContentSection {
   id: string;
-  type: 'thoughtExperiment' | 'quote' | 'text' | 'resourceLink' | 'quiz';
+  type: 'thoughtExperiment' | 'quote' | 'text' | 'resourceLink' | 'quiz' | 'video';
   title?: string;
   content?: string;
   prompt?: string;
@@ -9,6 +9,14 @@ export interface ContentSection {
   url?: string;
   label?: string;
   questions?: QuizQuestion[];
+  videoUrl?: string;
+  videoTitle?: string;
+  videoDescription?: string;
+  context?: string;
+  fullQuote?: string;
+  date?: string;
+  location?: string;
+  occasion?: string;
 }
 
 export interface QuizQuestion {
