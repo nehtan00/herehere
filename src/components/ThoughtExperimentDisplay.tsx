@@ -24,9 +24,8 @@ export const ThoughtExperimentDisplay: React.FC<ThoughtExperimentDisplayProps> =
   const { saveUserReflection, getUserReflection } = useAppContext();
   const [reflection, setReflection] = useState(initialReflection);
   const [isSaving, setIsSaving] = useState(false);
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedPrompt, setGeneratedPrompt] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  // Remove: isGenerating, generatedPrompt, error, generateReflectionPrompt, and all JSX for the Generate Prompt button and generated prompt display.
+  // Only keep the reflection textarea and save button.
 
   // Load existing reflection on component mount
   useEffect(() => {
@@ -59,20 +58,6 @@ export const ThoughtExperimentDisplay: React.FC<ThoughtExperimentDisplayProps> =
     }
   };
 
-  const generateReflectionPrompt = async () => {
-    setIsGenerating(true);
-    setError(null);
-    setGeneratedPrompt(null);
-    try {
-      const result = await generateGeminiPrompt(prompt, reflection);
-      setGeneratedPrompt(result);
-    } catch (err) {
-      setError('Failed to generate prompt. Please try again.');
-    } finally {
-      setIsGenerating(false);
-    }
-  };
-
   return (
     <Card className="space-y-6">
       <div className="flex items-start space-x-3">
@@ -95,20 +80,6 @@ export const ThoughtExperimentDisplay: React.FC<ThoughtExperimentDisplayProps> =
               Your Reflection
             </label>
           </div>
-          <Button
-            variant="secondary"
-            size="sm"
-            onClick={generateReflectionPrompt}
-            disabled={isGenerating}
-            className="flex items-center space-x-2"
-          >
-            {isGenerating ? (
-              <LoadingSpinner size="sm" />
-            ) : (
-              <Sparkles className="h-4 w-4" />
-            )}
-            <span>Generate Prompt</span>
-          </Button>
         </div>
         <textarea
           id="reflection"
@@ -119,13 +90,13 @@ export const ThoughtExperimentDisplay: React.FC<ThoughtExperimentDisplayProps> =
         />
       </div>
 
-      {error && (
+      {/* error && (
         <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
           {error}
         </div>
-      )}
+      ) */}
 
-      {generatedPrompt && (
+      {/* generatedPrompt && (
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <div className="flex items-start space-x-2">
             <Sparkles className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -139,7 +110,7 @@ export const ThoughtExperimentDisplay: React.FC<ThoughtExperimentDisplayProps> =
             </div>
           </div>
         </div>
-      )}
+      ) */}
       
       <div className="flex justify-end">
         <Button
