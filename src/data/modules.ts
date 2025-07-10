@@ -42,12 +42,12 @@ export const modules: Module[] = [
       {
         id: 'backfire-effect',
         type: 'text',
-        content: '**The Backfire Effect: When Facts Make Things Worse**\n\n**Here\'s the scary part:** Sometimes when you show people facts that contradict their beliefs, they become **more convinced** of their original position.\n\n**Why this happens:**\n• Presenting facts can feel like an attack on their identity\n• Their brain works harder to protect their worldview\n• They seek out information that confirms their original belief\n• They remember the "attack" but not the facts\n\n**The Solution:** Instead of just presenting facts, we need to understand the psychological barriers first.'
+        content: '**The Backfire Effect: When Facts Make Things Worse**\n\n**Here\'s the scary part:** Sometimes when you show people facts that contradict their beliefs, they become **more convinced** of their original position.\n\n**Why this happens:**\n- Presenting facts can feel like an attack on their identity\n- Their brain works harder to protect their worldview\n- They seek out information that confirms their original belief\n- They remember the "attack" but not the facts\n\n**The Solution:** Instead of just presenting facts, we need to understand the psychological barriers first.'
       },
       {
         id: 'social-identity',
         type: 'text',
-        content: '**Social Identity: Why Facts Don\'t Matter**\n\nYour political beliefs aren\'t just opinions - they\'re part of your **identity**. When someone challenges your political views, it feels like they\'re attacking **who you are**.\n\n**The Identity Trap:**\n• "I\'m a conservative/liberal" becomes part of your self-concept\n• Information that contradicts your group feels like a personal attack\n• You defend your group\'s beliefs to protect your identity\n• Facts become secondary to group loyalty\n\n**Breaking Free:** The key is separating your identity from your beliefs. You can change your mind without changing who you are.'
+        content: '**Social Identity: Why Facts Don\'t Matter**\n\nYour political beliefs aren\'t just opinions - they\'re part of your **identity**. When someone challenges your political views, it feels like they\'re attacking **who you are**.\n\n**The Identity Trap:**\n- "I\'m a conservative/liberal" becomes part of your self-concept\n- Information that contradicts your group feels like a personal attack\n- You defend your group\'s beliefs to protect your identity\n- Facts become secondary to group loyalty\n\n**Breaking Free:** The key is separating your identity from your beliefs. You can change your mind without changing who you are.'
       },
       {
         id: 'reflection-2',
@@ -69,7 +69,7 @@ export const modules: Module[] = [
       {
         id: 'agenda-setting',
         type: 'text',
-        content: '**Agenda Setting: Controlling What You Think About**\n\n**The Theory:** Media doesn\'t tell you what to think - it tells you **what to think about**.\n\n**How it works:**\n• Media chooses which issues get attention\n• Issues that get repeated coverage seem more important\n• You start believing these are the "real" problems\n• Other issues disappear from your awareness\n\n**Example:** If media constantly covers "border crisis" stories, you start believing immigration is the most important issue, regardless of actual statistics.\n\n**The Psychological Effect:** Your brain naturally assumes that what gets attention is what matters most.'
+        content: '**Agenda Setting: Controlling What You Think About**\n\n**The Theory:** Media doesn\'t tell you what to think - it tells you **what to think about**.\n\n**How it works:**\n- Media chooses which issues get attention\n- Issues that get repeated coverage seem more important\n- You start believing these are the "real" problems\n- Other issues disappear from your awareness\n\n**Example:** If media constantly covers "border crisis" stories, you start believing immigration is the most important issue, regardless of actual statistics.\n\n**The Psychological Effect:** Your brain naturally assumes that what gets attention is what matters most.'
       },
       {
         id: 'priming',
@@ -79,17 +79,17 @@ export const modules: Module[] = [
       {
         id: 'cultivation-theory',
         type: 'text',
-        content: '**Cultivation Theory: The "Mean World Syndrome"**\n\n**The Theory:** The more media you consume, the more you believe the world is dangerous and threatening.\n\n**How it works:**\n• Media over-reports crime, violence, and threats\n• You start believing the world is more dangerous than it actually is\n• This makes you more receptive to "tough" solutions and authoritarian leaders\n• You become more fearful and less trusting\n\n**The Research:** Heavy media consumers consistently overestimate crime rates and believe the world is more dangerous than statistics show.\n\n**The Psychological Effect:** Fear makes you more likely to accept extreme solutions and less likely to question authority.'
+        content: '**Cultivation Theory: The "Mean World Syndrome"**\n\n**The Theory:** The more media you consume, the more you believe the world is dangerous and threatening.\n\n**How it works:**\n- Media over-reports crime, violence, and threats\n- You start believing the world is more dangerous than it actually is\n- This makes you more receptive to "tough" solutions and authoritarian leaders\n- You become more fearful and less trusting\n\n**The Research:** Heavy media consumers consistently overestimate crime rates and believe the world is more dangerous than statistics show.\n\n**The Psychological Effect:** Fear makes you more likely to accept extreme solutions and less likely to question authority.'
       },
       {
         id: 'emotional-manipulation',
         type: 'text',
-        content: '**Emotional Manipulation: The Feelings Game**\n\n**The Strategy:** Control emotions to control thoughts.\n\n**Key Emotions Used:**\n\n**1. Fear**\n• Makes you feel threatened and vulnerable\n• Increases receptivity to "protection" messages\n• Reduces critical thinking\n\n**2. Anger**\n• Motivates action and sharing\n• Creates "us vs them" thinking\n• Makes you feel morally superior\n\n**3. Outrage**\n• Triggers the "justice" response in your brain\n• Makes you want to "punish" the "bad guys"\n• Reduces empathy for the "other side"\n\n**4. Hope**\n• Makes you feel good about supporting certain causes\n• Creates emotional investment in specific outcomes\n• Reduces skepticism about promises\n\n**The Pattern:** Trigger emotion → Present "facts" → Emotional processing → Biased conclusions'
+        content: '**Emotional Manipulation: The Feelings Game**\n\n**The Strategy:** Control emotions to control thoughts.\n\n**Key Emotions Used:**\n\n**1. Fear**\n- Makes you feel threatened and vulnerable\n- Increases receptivity to "protection" messages\n- Reduces critical thinking\n\n**2. Anger**\n- Motivates action and sharing\n- Creates "us vs them" thinking\n- Makes you feel morally superior\n\n**3. Outrage**\n- Triggers the "justice" response in your brain\n- Makes you want to "punish" the "bad guys"\n- Reduces empathy for the "other side"\n\n**4. Hope**\n- Makes you feel good about supporting certain causes\n- Creates emotional investment in specific outcomes\n- Reduces skepticism about promises\n\n**The Pattern:** Trigger emotion → Present "facts" → Emotional processing → Biased conclusions'
       },
       {
         id: 'framing-examples',
         type: 'text',
-        content: '**Framing: The Power of Perspective**\n\n**The Concept:** How you present information dramatically affects how people interpret it.\n\n**Real Examples:**\n\n**Tax Policy:**\n• "Tax cuts for the wealthy" (emphasizes inequality)\n• "Tax relief for job creators" (emphasizes economic benefits)\n\n**Healthcare:**\n• "Government takeover of healthcare" (emphasizes loss of choice)\n• "Universal healthcare coverage" (emphasizes access for all)\n\n**Immigration:**\n• "Illegal aliens" (emphasizes law-breaking)\n• "Undocumented workers" (emphasizes economic contribution)\n\n**The Psychological Effect:** Your brain processes these as completely different issues, even though they\'re describing the same policies.'
+        content: '**Framing: The Power of Perspective**\n\n**The Concept:** How you present information dramatically affects how people interpret it.\n\n**Real Examples:**\n\n**Tax Policy:**\n- "Tax cuts for the wealthy" (emphasizes inequality)\n- "Tax relief for job creators" (emphasizes economic benefits)\n\n**Healthcare:**\n- "Government takeover of healthcare" (emphasizes loss of choice)\n- "Universal healthcare coverage" (emphasizes access for all)\n\n**Immigration:**\n- "Illegal aliens" (emphasizes law-breaking)\n- "Undocumented workers" (emphasizes economic contribution)\n\n**The Psychological Effect:** Your brain processes these as completely different issues, even though they\'re describing the same policies.'
       },
       {
         id: 'quote-analysis',
@@ -163,7 +163,7 @@ export const modules: Module[] = [
       {
         id: 'fact-check-1',
         type: 'text',
-        content: '**Let\'s trace this claim:**\n\nIn 2020, Pennsylvania officials investigated claims of dead people voting. Here\'s what they found:\n\n• **8,000+ names** were submitted as "dead voters"\n• **Only 2** were actually dead people who had votes cast in their name\n• **Both were clerical errors** where living people with the same names as deceased individuals had their votes incorrectly attributed\n\n**Result:** The claim was false. This is a classic example of taking isolated errors and exaggerating them into a widespread problem.'
+        content: '**Let\'s trace this claim:**\n\nIn 2020, Pennsylvania officials investigated claims of dead people voting. Here\'s what they found:\n\n- **8,000+ names** were submitted as "dead voters"\n- **Only 2** were actually dead people who had votes cast in their name\n- **Both were clerical errors** where living people with the same names as deceased individuals had their votes incorrectly attributed\n\n**Result:** The claim was false. This is a classic example of taking isolated errors and exaggerating them into a widespread problem.'
       },
       {
         id: 'source-analysis',
@@ -174,7 +174,7 @@ export const modules: Module[] = [
       {
         id: 'official-statement-1',
         type: 'text',
-        content: '**Official Pennsylvania Response:**\n\nPennsylvania Secretary of State Kathy Boockvar issued an official statement addressing the dead voter claims:\n\n*"We have thoroughly investigated every claim of dead people voting. Out of over 8,000 names submitted as potential dead voters, we found exactly 2 cases where deceased individuals had votes attributed to them. Both were clerical errors where living people with the same names as deceased individuals had their votes incorrectly recorded. There was no evidence of intentional fraud or widespread dead people voting."*\n\n**Key Points:**\n• **8,000+ claims** were investigated\n• **Only 2 cases** found (0.025%)\n• **Both were clerical errors**\n• **No intentional fraud** discovered\n\nThis official response directly contradicts the claims of widespread dead people voting.'
+        content: '**Official Pennsylvania Response:**\n\nPennsylvania Secretary of State Kathy Boockvar issued an official statement addressing the dead voter claims:\n\n*"We have thoroughly investigated every claim of dead people voting. Out of over 8,000 names submitted as potential dead voters, we found exactly 2 cases where deceased individuals had votes attributed to them. Both were clerical errors where living people with the same names as deceased individuals had their votes incorrectly recorded. There was no evidence of intentional fraud or widespread dead people voting."*\n\n**Key Points:**\n- **8,000+ claims** were investigated\n- **Only 2 cases** found (0.025%)\n- **Both were clerical errors**\n- **No intentional fraud** discovered\n\nThis official response directly contradicts the claims of widespread dead people voting.'
       },
       {
         id: 'reflection-2',
@@ -195,12 +195,12 @@ export const modules: Module[] = [
       {
         id: 'fact-check-2',
         type: 'text',
-        content: '**This claim was thoroughly investigated:**\n\n• **Multiple audits** were conducted, including hand recounts in Georgia\n• **No evidence** of vote switching was found\n• **Dominion machines** are used in both red and blue states with no systematic errors\n• **Fox News** was sued for defamation by Dominion\n• **Fox settled for $787 million**, admitting the claims were false\n\n**Result:** This claim was completely debunked by evidence and resulted in one of the largest defamation settlements in history.'
+        content: '**This claim was thoroughly investigated:**\n\n- **Multiple audits** were conducted, including hand recounts in Georgia\n- **No evidence** of vote switching was found\n- **Dominion machines** are used in both red and blue states with no systematic errors\n- **Fox News** was sued for defamation by Dominion\n- **Fox settled for $787 million**, admitting the claims were false\n\n**Result:** This claim was completely debunked by evidence and resulted in one of the largest defamation settlements in history.'
       },
       {
         id: 'dominion-lawsuit-details',
         type: 'text',
-        content: '**The Dominion Lawsuit Settlement:**\n\nIn April 2023, Fox News settled a defamation lawsuit with Dominion Voting Systems for **$787.5 million** - one of the largest defamation settlements in U.S. history.\n\n**What Fox News Admitted:**\n• Their claims about Dominion machines switching votes were **false**\n• They had **no evidence** to support the allegations\n• They **knew the claims were baseless** but aired them anyway\n• The claims **damaged Dominion\'s business** and reputation\n\n**Key Evidence from the Lawsuit:**\n• Internal Fox communications showed they **knew the claims were false**\n• Multiple fact-checkers had **debunked the claims** before Fox aired them\n• Fox continued to **promote the false narrative** despite knowing it was untrue\n\n**The Pattern:** This demonstrates how media outlets can spread misinformation even when they know it\'s false, prioritizing ratings and political narratives over truth.'
+        content: '**The Dominion Lawsuit Settlement:**\n\nIn April 2023, Fox News settled a defamation lawsuit with Dominion Voting Systems for **$787.5 million** - one of the largest defamation settlements in U.S. history.\n\n**What Fox News Admitted:**\n- Their claims about Dominion machines switching votes were **false**\n- They had **no evidence** to support the allegations\n- They **knew the claims were baseless** but aired them anyway\n- The claims **damaged Dominion\'s business** and reputation\n\n**Key Evidence from the Lawsuit:**\n- Internal Fox communications showed they **knew the claims were false**\n- Multiple fact-checkers had **debunked the claims** before Fox aired them\n- Fox continued to **promote the false narrative** despite knowing it was untrue\n\n**The Pattern:** This demonstrates how media outlets can spread misinformation even when they know it\'s false, prioritizing ratings and political narratives over truth.'
       },
       {
         id: 'quiz-1',
@@ -246,7 +246,7 @@ export const modules: Module[] = [
       {
         id: 'data-comparison',
         type: 'text',
-        content: '**Let\'s look at the actual data:**\n\n**2020 Death Toll Comparison:**\n• **Flu:** ~22,000 deaths in the US\n• **COVID-19:** Over 350,000 deaths in the US\n• **Ratio:** COVID-19 was **16 times more deadly** than the flu\n\n**Additional Factors:**\n• COVID-19 causes **long-term health problems** in many survivors\n• The flu typically does **not** cause long-term complications\n• COVID-19 spreads **more easily** than the flu\n\n**Result:** The claim that "COVID-19 is just like the flu" is completely false based on the data.'
+        content: '**Let\'s look at the actual data:**\n\n**2020 Death Toll Comparison:**\n- **Flu:** ~22,000 deaths in the US\n- **COVID-19:** Over 350,000 deaths in the US\n- **Ratio:** COVID-19 was **16 times more deadly** than the flu\n\n**Additional Factors:**\n- COVID-19 causes **long-term health problems** in many survivors\n- The flu typically does **not** cause long-term complications\n- COVID-19 spreads **more easily** than the flu\n\n**Result:** The claim that "COVID-19 is just like the flu" is completely false based on the data.'
       },
       {
         id: 'source-1',
@@ -257,7 +257,7 @@ export const modules: Module[] = [
       {
         id: 'fauci-expert-testimony',
         type: 'text',
-        content: '**Dr. Fauci\'s Expert Testimony:**\n\nDr. Anthony Fauci, director of the National Institute of Allergy and Infectious Diseases, provided clear expert testimony about COVID-19 vs the flu:\n\n*"COVID-19 is not the flu. It is a novel coronavirus that is significantly more deadly than seasonal influenza. The case fatality rate is much higher, and it causes more severe complications including long-term health problems that we don\'t see with the flu."*\n\n**Key Differences Dr. Fauci Explained:**\n• **Transmission:** COVID-19 spreads more easily than flu\n• **Severity:** COVID-19 causes more severe illness\n• **Long-term effects:** COVID-19 can cause lasting health problems\n• **Mortality:** COVID-19 has a higher death rate\n\n**The Pattern:** This expert medical testimony directly contradicts claims that COVID-19 is "just like the flu," showing how misinformation can ignore established scientific evidence.'
+        content: '**Dr. Fauci\'s Expert Testimony:**\n\nDr. Anthony Fauci, director of the National Institute of Allergy and Infectious Diseases, provided clear expert testimony about COVID-19 vs the flu:\n\n*"COVID-19 is not the flu. It is a novel coronavirus that is significantly more deadly than seasonal influenza. The case fatality rate is much higher, and it causes more severe complications including long-term health problems that we don\'t see with the flu."*\n\n**Key Differences Dr. Fauci Explained:**\n- **Transmission:** COVID-19 spreads more easily than flu\n- **Severity:** COVID-19 causes more severe illness\n- **Long-term effects:** COVID-19 can cause lasting health problems\n- **Mortality:** COVID-19 has a higher death rate\n\n**The Pattern:** This expert medical testimony directly contradicts claims that COVID-19 is "just like the flu," showing how misinformation can ignore established scientific evidence.'
       },
       {
         id: 'claim-2',
@@ -273,7 +273,7 @@ export const modules: Module[] = [
       {
         id: 'scientific-evidence',
         type: 'text',
-        content: '**Scientific Evidence on Masks:**\n\n**Peer-Reviewed Studies:**\n• Multiple studies have shown masks **reduce COVID-19 transmission**\n• **Journal of the American Medical Association** study found mask mandates reduced COVID-19 cases by 2% per day\n• **No credible studies** support the claim that masks make you sicker\n\n**What the Science Shows:**\n• Masks **filter respiratory droplets** that can carry the virus\n• They **protect both the wearer and others**\n• They are **safe for extended use**\n\n**Result:** The claim that "masks don\'t work and make you sicker" has no scientific basis and contradicts the evidence.'
+        content: '**Scientific Evidence on Masks:**\n\n**Peer-Reviewed Studies:**\n- Multiple studies have shown masks **reduce COVID-19 transmission**\n- **Journal of the American Medical Association** study found mask mandates reduced COVID-19 cases by 2% per day\n- **No credible studies** support the claim that masks make you sicker\n\n**What the Science Shows:**\n- Masks **filter respiratory droplets** that can carry the virus\n- They **protect both the wearer and others**\n- They are **safe for extended use**\n\n**Result:** The claim that "masks don\'t work and make you sicker" has no scientific basis and contradicts the evidence.'
       },
       {
         id: 'reflection-3',
@@ -371,7 +371,7 @@ export const modules: Module[] = [
       {
         id: 'fact-check-1',
         type: 'text',
-        content: 'Let\'s examine the data:\n\n• Border apprehensions are tracked by Customs and Border Protection\n• The majority of border crossers are families seeking asylum, not criminals\n• Crime rates in border states are actually lower than national averages\n• Most undocumented immigrants have been in the US for over 10 years\n\nThis claim uses emotional language ("pouring in") and conflates different issues to create fear.'
+        content: 'Let\'s examine the data:\n\n- Border apprehensions are tracked by Customs and Border Protection\n- The majority of border crossers are families seeking asylum, not criminals\n- Crime rates in border states are actually lower than national averages\n- Most undocumented immigrants have been in the US for over 10 years\n\nThis claim uses emotional language ("pouring in") and conflates different issues to create fear.'
       },
       {
         id: 'source-1',
@@ -388,7 +388,7 @@ export const modules: Module[] = [
       {
         id: 'fact-check-2',
         type: 'text',
-        content: 'This claim has multiple problems:\n\n• Climate change was first identified by scientists in the 1800s\n• NASA, NOAA, and thousands of scientists worldwide have confirmed it\n• China is actually investing heavily in renewable energy\n• The claim ignores that climate change affects all countries, including China\n\nThis is an example of conspiracy thinking - attributing complex issues to secret plots.'
+        content: 'This claim has multiple problems:\n\n- Climate change was first identified by scientists in the 1800s\n- NASA, NOAA, and thousands of scientists worldwide have confirmed it\n- China is actually investing heavily in renewable energy\n- The claim ignores that climate change affects all countries, including China\n\nThis is an example of conspiracy thinking - attributing complex issues to secret plots.'
       },
       {
         id: 'source-2',
@@ -451,14 +451,14 @@ export const modules: Module[] = [
               'I\'m not sure'
             ],
             correctAnswer: 2,
-            explanation: 'This is misleading. A federal agency studied gas stove emissions, but no ban was ever proposed. The claim exaggerates a study into a non-existent policy.'
+            explanation: 'This is misleading. A federal agency studied energy efficiency standards for appliances, but no ban on gas stoves was ever proposed. The claim exaggerates a study into a non-existent policy.'
           }
         ]
       },
       {
         id: 'fact-check-test-1',
         type: 'text',
-        content: '**The Facts:**\n\n**What Actually Happened:**\n• The **Department of Energy** studied energy efficiency standards for appliances\n• **No ban on gas stoves** was ever proposed\n• The study was about **potential future efficiency standards**\n• **Existing gas stoves** would not be affected\n\n**The Pattern:**\nThis is a classic example of taking a **legitimate study** and twisting it into a false claim about **government overreach**. The claim exaggerates a routine government study into a non-existent policy.'
+        content: '**The Facts:**\n\n**What Actually Happened:**\n- The **Department of Energy** studied energy efficiency standards for appliances\n- **No ban on gas stoves** was ever proposed\n- The study was about **potential future efficiency standards**\n- **Existing gas stoves** would not be affected\n\n**The Pattern:**\nThis is a classic example of taking a **legitimate study** and twisting it into a false claim about **government overreach**. The claim exaggerates a routine government study into a non-existent policy.'
       },
       {
         id: 'test-2',
@@ -487,7 +487,7 @@ export const modules: Module[] = [
       {
         id: 'fact-check-test-2',
         type: 'text',
-        content: '**The Facts:**\n\n**Federal Election Law:**\n• **Federal law requires U.S. citizenship** to vote in federal elections\n• **Undocumented immigrants cannot register** to vote\n• **No evidence** of widespread voter fraud by immigrants exists\n\n**Local Elections:**\n• Some local jurisdictions allow non-citizen voting in **local elections only**\n• This does **not** affect federal elections\n\n**The Pattern:**\nThis claim is a **baseless conspiracy theory** designed to create fear about election integrity. It conflates local and federal voting laws to create a false narrative.'
+        content: '**The Facts:**\n\n**Federal Election Law:**\n- **Federal law requires U.S. citizenship** to vote in federal elections\n- **Undocumented immigrants cannot register** to vote\n- **No evidence** of widespread voter fraud by immigrants exists\n\n**Local Elections:**\n- Some local jurisdictions allow non-citizen voting in **local elections only**\n- This does **not** affect federal elections\n\n**The Pattern:**\nThis claim is a **baseless conspiracy theory** designed to create fear about election integrity. It conflates local and federal voting laws to create a false narrative.'
       },
       {
         id: 'test-3',
@@ -516,7 +516,7 @@ export const modules: Module[] = [
       {
         id: 'fact-check-test-3',
         type: 'text',
-        content: '**The Facts:**\n\n**Legal Challenges:**\n• **60+ court cases** challenging the election were dismissed or lost\n• **Multiple recounts** in key states confirmed the results\n• **Trump\'s own Department of Justice** found no evidence of fraud\n\n**Election Certification:**\n• **Election officials from both parties** certified the results\n• **State legislatures** (including Republican-controlled) certified results\n• **Congress** certified the results on January 6, 2021\n\n**The Pattern:**\nThis claim has been **thoroughly debunked** by evidence from multiple sources. Despite extensive investigations, no evidence of widespread fraud has been found.'
+        content: '**The Facts:**\n\n**Legal Challenges:**\n- **60+ court cases** challenging the election were dismissed or lost\n- **Multiple recounts** in key states confirmed the results\n- **Trump\'s own Department of Justice** found no evidence of fraud\n\n**Election Certification:**\n- **Election officials from both parties** certified the results\n- **State legislatures** (including Republican-controlled) certified results\n- **Congress** certified the results on January 6, 2021\n\n**The Pattern:**\nThis claim has been **thoroughly debunked** by evidence from multiple sources. Despite extensive investigations, no evidence of widespread fraud has been found.'
       },
       {
         id: 'test-4',
@@ -545,7 +545,7 @@ export const modules: Module[] = [
       {
         id: 'fact-check-test-4',
         type: 'text',
-        content: '**The Facts:**\n\n**Vaccine Technology:**\n• Vaccines are **liquid solutions** injected with needles\n• **Microchips cannot be injected** through standard vaccine needles\n• The **vaccine ingredients are publicly available** and well-documented\n\n**Tracking Technology:**\n• **No tracking technology exists** that could work this way\n• Microchips need **power sources and antennas** to function\n• **No evidence** of such technology in vaccines exists\n\n**The Pattern:**\nThis is a **classic conspiracy theory** that ignores basic science and technology. It creates fear by combining unrelated concepts (vaccines + tracking) without understanding how either actually works.'
+        content: '**The Facts:**\n\n**Vaccine Technology:**\n- Vaccines are **liquid solutions** injected with needles\n- **Microchips cannot be injected** through standard vaccine needles\n- The **vaccine ingredients are publicly available** and well-documented\n\n**Tracking Technology:**\n- **No tracking technology exists** that could work this way\n- Microchips need **power sources and antennas** to function\n- **No evidence** of such technology in vaccines exists\n\n**The Pattern:**\nThis is a **classic conspiracy theory** that ignores basic science and technology. It creates fear by combining unrelated concepts (vaccines + tracking) without understanding how either actually works.'
       },
       {
         id: 'reflection-final',
@@ -585,7 +585,7 @@ export const modules: Module[] = [
       {
         id: 'repetition-technique',
         type: 'text',
-        content: '**The Repetition Technique: The Big Lie**\n\n**The Method:** Repeat false claims constantly until they feel true.\n\n**How it works:**\n• **Psychological Principle:** Repetition increases familiarity\n• **Familiarity breeds acceptance** - things that feel familiar seem more true\n• **The "illusory truth effect"** - repeated statements are judged as more truthful\n\n**Example:** "The election was stolen" repeated thousands of times across multiple platforms.\n\n**The Effect:** Even when people know something is false, constant repetition can make them doubt their own knowledge.'
+        content: '**The Repetition Technique: The Big Lie**\n\n**The Method:** Repeat false claims constantly until they feel true.\n\n**How it works:**\n- **Psychological Principle:** Repetition increases familiarity\n- **Familiarity breeds acceptance** - things that feel familiar seem more true\n- **The "illusory truth effect"** - repeated statements are judged as more truthful\n\n**Example:** "The election was stolen" repeated thousands of times across multiple platforms.\n\n**The Effect:** Even when people know something is false, constant repetition can make them doubt their own knowledge.'
       },
       {
         id: 'emotional-priming',
@@ -595,12 +595,12 @@ export const modules: Module[] = [
       {
         id: 'us-vs-them',
         type: 'text',
-        content: '**Us vs. Them: Tribal Psychology**\n\n**The Technique:** Create clear "good guys" and "bad guys" to trigger tribal instincts.\n\n**How it works:**\n• **"Real Americans" vs. "elites"**\n• **"Patriots" vs. "traitors"**\n• **"Hard workers" vs. "lazy takers"**\n\n**The Psychological Effect:**\n• Triggers **in-group loyalty** and **out-group hostility**\n• Makes you defend your "team" regardless of facts\n• Reduces empathy for the "other side"\n• Increases willingness to accept extreme solutions\n\n**The Pattern:** Create division → Trigger tribal instincts → Reduce critical thinking'
+        content: '**Us vs. Them: Tribal Psychology**\n\n**The Technique:** Create clear "good guys" and "bad guys" to trigger tribal instincts.\n\n**How it works:**\n- **"Real Americans" vs. "elites"**\n- **"Patriots" vs. "traitors"**\n- **"Hard workers" vs. "lazy takers"**\n\n**The Psychological Effect:**\n- Triggers **in-group loyalty** and **out-group hostility**\n- Makes you defend your "team" regardless of facts\n- Reduces empathy for the "other side"\n- Increases willingness to accept extreme solutions\n\n**The Pattern:** Create division → Trigger tribal instincts → Reduce critical thinking'
       },
       {
         id: 'victim-narrative',
         type: 'text',
-        content: '**The Victim Narrative: Persecution Complex**\n\n**The Technique:** Present your audience as victims of a conspiracy.\n\n**The Narrative:**\n• "They" are out to get "us"\n• "They" control the media, education, government\n• "They" want to destroy "our" way of life\n• "We" are the last defenders of truth\n\n**The Psychological Effect:**\n• Creates **persecution complex**\n• Justifies extreme responses\n• Makes people feel special and important\n• Reduces skepticism about claims\n\n**The Pattern:** Identify enemy → Create victim narrative → Justify extreme actions'
+        content: '**The Victim Narrative: Persecution Complex**\n\n**The Technique:** Present your audience as victims of a conspiracy.\n\n**The Narrative:**\n- "They" are out to get "us"\n- "They" control the media, education, government\n- "They" want to destroy "our" way of life\n- "We" are the last defenders of truth\n\n**The Psychological Effect:**\n- Creates **persecution complex**\n- Justifies extreme responses\n- Makes people feel special and important\n- Reduces skepticism about claims\n\n**The Pattern:** Identify enemy → Create victim narrative → Justify extreme actions'
       },
       {
         id: 'quote-example',
