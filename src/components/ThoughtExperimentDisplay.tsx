@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Card } from './Card';
 import { Button } from './Button';
 import { LoadingSpinner } from './LoadingSpinner';
-import { Lightbulb, Edit3, Sparkles } from 'lucide-react';
+import { Lightbulb, Edit3 } from 'lucide-react';
 import { useAppContext } from '../contexts/AppContext';
-import { generateGeminiPrompt } from '../services/gemini';
 
 interface ThoughtExperimentDisplayProps {
   prompt: string;
