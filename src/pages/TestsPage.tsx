@@ -269,6 +269,7 @@ export const TestsPage: React.FC = () => {
       </Card>
 
       <Quiz
+        key={quizzes[currentQuizIndex].id}
         question={quizzes[currentQuizIndex].question}
         options={quizzes[currentQuizIndex].options}
         onComplete={handleQuizComplete}
