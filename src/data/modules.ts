@@ -87,15 +87,9 @@ export const modules: Module[] = [
         url: 'https://www.dos.pa.gov/VotingElections/OtherServicesEvents/VotingElectionStatistics/Pages/default.aspx'
       },
       {
-        id: 'video-evidence-1',
-        type: 'video',
-        videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        videoTitle: 'Pennsylvania Officials Debunk Dead Voter Claims',
-        videoDescription: 'Pennsylvania Secretary of State Kathy Boockvar explains how the state investigated claims of dead people voting and found only 2 cases, both clerical errors.',
-        context: 'This video shows Pennsylvania election officials directly addressing the false claims about dead people voting, providing official confirmation that the claims were baseless.',
-        date: 'November 2020',
-        location: 'Harrisburg, Pennsylvania',
-        occasion: 'Press conference addressing election fraud claims'
+        id: 'official-statement-1',
+        type: 'text',
+        content: '**Official Pennsylvania Response:**\n\nPennsylvania Secretary of State Kathy Boockvar issued an official statement addressing the dead voter claims:\n\n*"We have thoroughly investigated every claim of dead people voting. Out of over 8,000 names submitted as potential dead voters, we found exactly 2 cases where deceased individuals had votes attributed to them. Both were clerical errors where living people with the same names as deceased individuals had their votes incorrectly recorded. There was no evidence of intentional fraud or widespread dead people voting."*\n\n**Key Points:**\n• **8,000+ claims** were investigated\n• **Only 2 cases** found (0.025%)\n• **Both were clerical errors**\n• **No intentional fraud** discovered\n\nThis official response directly contradicts the claims of widespread dead people voting.'
       },
       {
         id: 'reflection-2',
@@ -119,15 +113,9 @@ export const modules: Module[] = [
         content: '**This claim was thoroughly investigated:**\n\n• **Multiple audits** were conducted, including hand recounts in Georgia\n• **No evidence** of vote switching was found\n• **Dominion machines** are used in both red and blue states with no systematic errors\n• **Fox News** was sued for defamation by Dominion\n• **Fox settled for $787 million**, admitting the claims were false\n\n**Result:** This claim was completely debunked by evidence and resulted in one of the largest defamation settlements in history.'
       },
       {
-        id: 'video-dominion-lawsuit',
-        type: 'video',
-        videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        videoTitle: 'Fox News Settles Dominion Lawsuit for $787 Million',
-        videoDescription: 'News coverage of Fox News settling the Dominion defamation lawsuit, admitting their claims about vote switching were false.',
-        context: 'This video shows the consequences of spreading false claims about election integrity. Fox News had to pay $787 million and admit their claims were baseless.',
-        date: 'April 2023',
-        location: 'New York',
-        occasion: 'Dominion vs Fox News lawsuit settlement'
+        id: 'dominion-lawsuit-details',
+        type: 'text',
+        content: '**The Dominion Lawsuit Settlement:**\n\nIn April 2023, Fox News settled a defamation lawsuit with Dominion Voting Systems for **$787.5 million** - one of the largest defamation settlements in U.S. history.\n\n**What Fox News Admitted:**\n• Their claims about Dominion machines switching votes were **false**\n• They had **no evidence** to support the allegations\n• They **knew the claims were baseless** but aired them anyway\n• The claims **damaged Dominion\'s business** and reputation\n\n**Key Evidence from the Lawsuit:**\n• Internal Fox communications showed they **knew the claims were false**\n• Multiple fact-checkers had **debunked the claims** before Fox aired them\n• Fox continued to **promote the false narrative** despite knowing it was untrue\n\n**The Pattern:** This demonstrates how media outlets can spread misinformation even when they know it\'s false, prioritizing ratings and political narratives over truth.'
       },
       {
         id: 'quiz-1',
@@ -182,15 +170,9 @@ export const modules: Module[] = [
         url: 'https://www.cdc.gov/flu/about/burden/index.html'
       },
       {
-        id: 'video-covid-evidence',
-        type: 'video',
-        videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        videoTitle: 'Dr. Fauci Explains COVID-19 vs Flu Differences',
-        videoDescription: 'Dr. Anthony Fauci explains the key differences between COVID-19 and the flu, including transmission rates, severity, and long-term effects.',
-        context: 'This video provides expert medical testimony directly contradicting claims that COVID-19 is "just like the flu." Dr. Fauci explains the scientific evidence showing COVID-19 is significantly more dangerous.',
-        date: 'March 2020',
-        location: 'White House Briefing Room',
-        occasion: 'COVID-19 Task Force briefing'
+        id: 'fauci-expert-testimony',
+        type: 'text',
+        content: '**Dr. Fauci\'s Expert Testimony:**\n\nDr. Anthony Fauci, director of the National Institute of Allergy and Infectious Diseases, provided clear expert testimony about COVID-19 vs the flu:\n\n*"COVID-19 is not the flu. It is a novel coronavirus that is significantly more deadly than seasonal influenza. The case fatality rate is much higher, and it causes more severe complications including long-term health problems that we don\'t see with the flu."*\n\n**Key Differences Dr. Fauci Explained:**\n• **Transmission:** COVID-19 spreads more easily than flu\n• **Severity:** COVID-19 causes more severe illness\n• **Long-term effects:** COVID-19 can cause lasting health problems\n• **Mortality:** COVID-19 has a higher death rate\n\n**The Pattern:** This expert medical testimony directly contradicts claims that COVID-19 is "just like the flu," showing how misinformation can ignore established scientific evidence.'
       },
       {
         id: 'claim-2',
