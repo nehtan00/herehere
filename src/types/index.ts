@@ -36,6 +36,14 @@ export interface UserProgress {
   quizScores: Record<string, number>;
 }
 
+export interface Resource {
+  id: string;
+  type: 'fact-checking' | 'education' | 'media-analysis' | 'science' | 'health' | 'economics' | 'demographics' | 'politics';
+  title: string;
+  description: string;
+  url: string;
+}
+
 export interface AppContextType {
   currentPage: string;
   setCurrentPage: (page: string) => void;
