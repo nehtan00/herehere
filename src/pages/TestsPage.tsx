@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card } from '../components/Card';
 import { Quiz } from '../components/Quiz';
-import { TestTube, CheckCircle } from 'lucide-react';
+import { TestTube, CheckCircle, ArrowRight } from 'lucide-react';
 
 interface QuizData {
   id: string;
@@ -18,6 +18,7 @@ export const TestsPage: React.FC = () => {
   const [currentQuizIndex, setCurrentQuizIndex] = useState(0);
   const [scores, setScores] = useState<number[]>([]);
   const [showResults, setShowResults] = useState(false);
+  const [isAnswered, setIsAnswered] = useState(false);
 
   const quizzes: QuizData[] = [
     {
@@ -176,21 +177,23 @@ export const TestsPage: React.FC = () => {
     const newScores = [...scores];
     newScores[currentQuizIndex] = score;
     setScores(newScores);
-    
-    // Move to next quiz after a delay
-    setTimeout(() => {
-      if (currentQuizIndex < quizzes.length - 1) {
-        setCurrentQuizIndex(currentQuizIndex + 1);
-      } else {
-        setShowResults(true);
-      }
-    }, 3000);
+    setIsAnswered(true);
+  };
+
+  const handleNext = () => {
+    setIsAnswered(false);
+    if (currentQuizIndex < quizzes.length - 1) {
+      setCurrentQuizIndex(currentQuizIndex + 1);
+    } else {
+      setShowResults(true);
+    }
   };
 
   const handleRestart = () => {
     setCurrentQuizIndex(0);
     setScores([]);
     setShowResults(false);
+    setIsAnswered(false);
   };
 
   const totalScore = scores.reduce((sum, score) => sum + score, 0);
@@ -275,6 +278,15 @@ export const TestsPage: React.FC = () => {
         onComplete={handleQuizComplete}
         className="slide-up"
       />
+      {isAnswered && (
+        <button
+          onClick={handleNext}
+          className="mt-4 px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors flex items-center mx-auto"
+        >
+          Next
+          <ArrowRight className="h-4 w-4 ml-2" />
+        </button>
+      )}
     </div>
   );
 }; 
