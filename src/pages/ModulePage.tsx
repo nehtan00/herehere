@@ -8,6 +8,7 @@ import { Video } from '../components/Video';
 import { ArrowLeft, ArrowRight, Home, Link, HelpCircle } from 'lucide-react';
 import { Quiz } from '../components/Quiz';
 import ReactMarkdown from 'react-markdown';
+import DOMPurify from 'dompurify';
 
 export const ModulePage: React.FC = () => {
   const { 
@@ -74,7 +75,7 @@ export const ModulePage: React.FC = () => {
         return (
           <Card>
             <div className="prose max-w-none">
-              <ReactMarkdown>{currentSectionData.content || ''}</ReactMarkdown>
+              <ReactMarkdown>{DOMPurify.sanitize(currentSectionData.content || '')}</ReactMarkdown>
             </div>
           </Card>
         );
