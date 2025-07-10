@@ -656,6 +656,70 @@ export const modules: Module[] = [
         content: '**The Facts:**\n\n**Vaccine Technology:**\n- Vaccines are **liquid solutions** injected with needles\n- **Microchips cannot be injected** through standard vaccine needles\n- The **vaccine ingredients are publicly available** and well-documented\n\n**Tracking Technology:**\n- **No tracking technology exists** that could work this way\n- Microchips need **power sources and antennas** to function\n- **No evidence** of such technology in vaccines exists\n\n**The Pattern:**\nThis is a **classic conspiracy theory** that ignores basic science and technology. It creates fear by combining unrelated concepts (vaccines + tracking) without understanding how either actually works.'
       },
       {
+        id: 'quiz-christian-teachings',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q-christian-1',
+            question: 'Which of the following statements is a direct teaching of Jesus (according to the Bible)?',
+            options: [
+              '“Love your enemies and pray for those who persecute you.”',
+              '“An eye for an eye, a tooth for a tooth.”',
+              '“God helps those who help themselves.”',
+              '“Render unto Caesar what is Caesar’s, and unto God what is God’s.”'
+            ],
+            correctAnswer: 0,
+            explanation: '“Love your enemies and pray for those who persecute you.” (Matthew 5:44) is a direct teaching of Jesus. “An eye for an eye” is Old Testament law, “God helps those who help themselves” is not in the Bible, and “Render unto Caesar…” (Matthew 22:21) is also a teaching of Jesus, but the first is the most direct call to radical love.'
+          },
+          {
+            id: 'q-christian-2',
+            question: 'Which of these statements is most consistent with the teachings of Jesus about the poor?',
+            options: [
+              '“Whatever you did for one of the least of these brothers and sisters of mine, you did for me.”',
+              '“If anyone is not willing to work, let him not eat.”',
+              '“The poor will always be with you.”',
+              '“Blessed are the rich, for they have received their reward.”'
+            ],
+            correctAnswer: 0,
+            explanation: '“Whatever you did for one of the least of these… you did for me.” (Matthew 25:40) is a core teaching of Jesus about caring for the poor. The other statements are either out of context or not from Jesus.'
+          }
+        ]
+      },
+      {
+        id: 'quiz-aca-foxnews',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q-aca-1',
+            question: 'Fox News (2010): “Obamacare is a government takeover of healthcare that will put bureaucrats between you and your doctor.” Is this an accurate description of the ACA?',
+            options: [
+              'Yes, the ACA is a government takeover.',
+              'No, the ACA builds on private insurance and does not create a government-run system.',
+              'I’m not sure.'
+            ],
+            correctAnswer: 1,
+            explanation: 'The ACA (Affordable Care Act) does not create a government-run healthcare system. It expands private insurance coverage, sets rules for insurers, and provides subsidies. Doctors and hospitals remain private. [KFF: ACA Myths](https://www.kff.org/health-reform/issue-brief/obamacare-myths/)'
+          }
+        ]
+      },
+      {
+        id: 'quiz-minimum-wage-foxnews',
+        type: 'quiz',
+        questions: [
+          {
+            id: 'q-minwage-1',
+            question: 'Fox News (2021): “Raising the minimum wage will destroy millions of jobs and hurt the economy.” Is this claim supported by the majority of economic research?',
+            options: [
+              'Yes, most research shows job loss.',
+              'No, most research shows little to no negative effect on jobs.',
+              'I’m not sure.'
+            ],
+            correctAnswer: 1,
+            explanation: 'Most recent studies (e.g., Congressional Budget Office, 2021; meta-analyses) find that moderate increases in the minimum wage have little to no negative effect on overall employment, and can reduce poverty. [CBO Report](https://www.cbo.gov/publication/55681)'
+          }
+        ]
+      },
+      {
         id: 'reflection-final',
         type: 'thoughtExperiment',
         prompt: 'How did you do on these tests? Were you surprised by any of the correct answers? What patterns did you notice in the false claims?'
