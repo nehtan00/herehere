@@ -136,6 +136,95 @@ export const modules: Module[] = [
         id: 'reflection-3',
         type: 'thoughtExperiment',
         prompt: 'Think about the last time you felt angry or afraid after consuming media. What specific words or images triggered those emotions? How did those emotions affect how you processed the information that followed?'
+      },
+      {
+        id: 'repetition-example',
+        type: 'text',
+        content: `**Real Example: Repetition Technique on Fox News**
+
+> "We have massive evidence of fraud. This is not going away."
+
+— Hannity, Fox News, November 12, 2020  
+[Transcript Source](https://www.foxnews.com/transcript/hannity-on-the-latest-in-the-2020-election)
+
+**Context:** After the 2020 election, Fox News hosts and guests repeatedly claimed the election was "stolen" or "rigged," even after these claims were debunked. The repetition of these claims night after night created the illusion of truth for many viewers.
+
+**Tactic:** Repetition (The Big Lie)
+
+**Fact Check:**
+- Multiple audits and recounts in key states found no evidence of widespread fraud.
+- The Cybersecurity and Infrastructure Security Agency called the 2020 election "the most secure in American history."
+- Fox News later settled a $787 million defamation lawsuit with Dominion Voting Systems over these false claims.`
+      },
+      {
+        id: 'emotional-priming-example',
+        type: 'text',
+        content: `**Real Example: Emotional Priming on Fox News**
+
+> "A massive caravan of migrants is storming toward our border. What will this mean for your safety?"
+
+— The Ingraham Angle, Fox News, October 22, 2018  
+[Media Matters: Fox News’ Caravan Coverage](https://www.mediamatters.org/fox-news/fox-news-caravan-coverage)
+
+**Context:** Fox News often opens segments about immigration with dramatic language and visuals, priming viewers to feel fear or outrage before any facts are presented.
+
+**Tactic:** Emotional Priming
+
+**Fact Check:**
+- The "caravan" was mostly composed of families seeking asylum, not criminals.
+- Crime rates among immigrants are lower than among native-born Americans (Cato Institute, 2018).`
+      },
+      {
+        id: 'us-vs-them-example',
+        type: 'text',
+        content: `**Real Example: Us vs. Them / Tribal Psychology on Fox News**
+
+> "The left hates you. They want to control your life, your speech, your children."
+
+— Tucker Carlson Tonight, Fox News, March 1, 2021  
+[Media Matters: Tucker Carlson](https://www.mediamatters.org/tucker-carlson/tucker-carlson-left-hates-you)
+
+**Context:** Fox News frequently frames political debates as "real Americans" vs. "elites" or "the left," triggering tribal loyalty and hostility.
+
+**Tactic:** Us vs. Them / Tribal Psychology
+
+**Fact Check:**
+- Political opponents are not a monolith and do not "hate" the other side; this framing is designed to create division and emotional response.`
+      },
+      {
+        id: 'victim-narrative-example',
+        type: 'text',
+        content: `**Real Example: Victim Narrative on Fox News**
+
+> "They want to cancel Christmas. They want to erase your traditions."
+
+— Fox & Friends, Fox News, December 7, 2021  
+[Media Matters: Fox & Friends](https://www.mediamatters.org/fox-friends/fox-friends-claims-liberals-want-cancel-christmas)
+
+**Context:** Segments about "cancel culture" or the "war on Christmas" present the audience as victims of a conspiracy, justifying outrage and defensive action.
+
+**Tactic:** Victim Narrative / Persecution Complex
+
+**Fact Check:**
+- There is no organized effort to "cancel Christmas"; this is a recurring media trope not supported by evidence.`
+      },
+      {
+        id: 'cultivation-theory-example',
+        type: 'text',
+        content: `**Real Example: Cultivation Theory / Mean World Syndrome on Fox News**
+
+> "Crime is out of control in cities run by Democrats. You’re not safe anymore."
+
+— The Five, Fox News, July 12, 2022  
+[Media Matters: Fox News Crime Coverage](https://www.mediamatters.org/fox-news/fox-news-has-mentioned-crime-over-2000-times-2022)
+
+**Context:** Fox News frequently over-reports crime in Democratic-run cities, creating a perception that the world is more dangerous than it is.
+
+**Tactic:** Cultivation Theory / Mean World Syndrome
+
+**Fact Check:**
+- Crime rates in many cities have been falling for decades, and violent crime is not at historic highs.
+- The perception of rising crime is often out of proportion to actual data (Bureau of Justice Statistics).`
       }
     ]
   },
@@ -201,6 +290,25 @@ export const modules: Module[] = [
         id: 'dominion-lawsuit-details',
         type: 'text',
         content: '**The Dominion Lawsuit Settlement:**\n\nIn April 2023, Fox News settled a defamation lawsuit with Dominion Voting Systems for **$787.5 million** - one of the largest defamation settlements in U.S. history.\n\n**What Fox News Admitted:**\n- Their claims about Dominion machines switching votes were **false**\n- They had **no evidence** to support the allegations\n- They **knew the claims were baseless** but aired them anyway\n- The claims **damaged Dominion\'s business** and reputation\n\n**Key Evidence from the Lawsuit:**\n- Internal Fox communications showed they **knew the claims were false**\n- Multiple fact-checkers had **debunked the claims** before Fox aired them\n- Fox continued to **promote the false narrative** despite knowing it was untrue\n\n**The Pattern:** This demonstrates how media outlets can spread misinformation even when they know it\'s false, prioritizing ratings and political narratives over truth.'
+      },
+      {
+        id: 'dominion-foxnews-example',
+        type: 'text',
+        content: `**Real Example: Dominion Voting Machine Claim on Fox News**
+
+> "Dominion Voting Systems, the company that makes the voting machines used in Georgia and other states, has been accused of switching votes from President Trump to Joe Biden. The company has denied these allegations, but the claims have been repeated by the president and his allies."
+
+— Tucker Carlson Tonight, Fox News, November 2020  
+[Media Matters: Fox News Dominion Coverage](https://www.mediamatters.org/fox-news/fox-news-dominion-coverage)
+
+**Context:** Fox News repeatedly aired claims about Dominion voting machines switching votes, despite having no evidence. These claims were later proven false and resulted in a massive defamation lawsuit.
+
+**Tactic:** Repetition (The Big Lie)
+
+**Fact Check:**
+- Multiple audits and hand recounts in Georgia and other states found no evidence of vote switching.
+- Dominion machines are used in both red and blue states with no systematic errors.
+- Fox News settled a $787 million defamation lawsuit with Dominion, admitting the claims were false.`
       },
       {
         id: 'quiz-1',
@@ -612,6 +720,95 @@ export const modules: Module[] = [
         date: '1988',
         location: 'Manufacturing Consent',
         occasion: 'Book publication'
+      },
+      {
+        id: 'repetition-example',
+        type: 'text',
+        content: `**Real Example: Repetition Technique on Fox News**
+
+> "We have massive evidence of fraud. This is not going away."
+
+— Hannity, Fox News, November 12, 2020  
+[Transcript Source](https://www.foxnews.com/transcript/hannity-on-the-latest-in-the-2020-election)
+
+**Context:** After the 2020 election, Fox News hosts and guests repeatedly claimed the election was "stolen" or "rigged," even after these claims were debunked. The repetition of these claims night after night created the illusion of truth for many viewers.
+
+**Tactic:** Repetition (The Big Lie)
+
+**Fact Check:**
+- Multiple audits and recounts in key states found no evidence of widespread fraud.
+- The Cybersecurity and Infrastructure Security Agency called the 2020 election "the most secure in American history."
+- Fox News later settled a $787 million defamation lawsuit with Dominion Voting Systems over these false claims.`
+      },
+      {
+        id: 'emotional-priming-example',
+        type: 'text',
+        content: `**Real Example: Emotional Priming on Fox News**
+
+> "A massive caravan of migrants is storming toward our border. What will this mean for your safety?"
+
+— The Ingraham Angle, Fox News, October 22, 2018  
+[Media Matters: Fox News’ Caravan Coverage](https://www.mediamatters.org/fox-news/fox-news-caravan-coverage)
+
+**Context:** Fox News often opens segments about immigration with dramatic language and visuals, priming viewers to feel fear or outrage before any facts are presented.
+
+**Tactic:** Emotional Priming
+
+**Fact Check:**
+- The "caravan" was mostly composed of families seeking asylum, not criminals.
+- Crime rates among immigrants are lower than among native-born Americans (Cato Institute, 2018).`
+      },
+      {
+        id: 'us-vs-them-example',
+        type: 'text',
+        content: `**Real Example: Us vs. Them / Tribal Psychology on Fox News**
+
+> "The left hates you. They want to control your life, your speech, your children."
+
+— Tucker Carlson Tonight, Fox News, March 1, 2021  
+[Media Matters: Tucker Carlson](https://www.mediamatters.org/tucker-carlson/tucker-carlson-left-hates-you)
+
+**Context:** Fox News frequently frames political debates as "real Americans" vs. "elites" or "the left," triggering tribal loyalty and hostility.
+
+**Tactic:** Us vs. Them / Tribal Psychology
+
+**Fact Check:**
+- Political opponents are not a monolith and do not "hate" the other side; this framing is designed to create division and emotional response.`
+      },
+      {
+        id: 'victim-narrative-example',
+        type: 'text',
+        content: `**Real Example: Victim Narrative on Fox News**
+
+> "They want to cancel Christmas. They want to erase your traditions."
+
+— Fox & Friends, Fox News, December 7, 2021  
+[Media Matters: Fox & Friends](https://www.mediamatters.org/fox-friends/fox-friends-claims-liberals-want-cancel-christmas)
+
+**Context:** Segments about "cancel culture" or the "war on Christmas" present the audience as victims of a conspiracy, justifying outrage and defensive action.
+
+**Tactic:** Victim Narrative / Persecution Complex
+
+**Fact Check:**
+- There is no organized effort to "cancel Christmas"; this is a recurring media trope not supported by evidence.`
+      },
+      {
+        id: 'cultivation-theory-example',
+        type: 'text',
+        content: `**Real Example: Cultivation Theory / Mean World Syndrome on Fox News**
+
+> "Crime is out of control in cities run by Democrats. You’re not safe anymore."
+
+— The Five, Fox News, July 12, 2022  
+[Media Matters: Fox News Crime Coverage](https://www.mediamatters.org/fox-news/fox-news-has-mentioned-crime-over-2000-times-2022)
+
+**Context:** Fox News frequently over-reports crime in Democratic-run cities, creating a perception that the world is more dangerous than it is.
+
+**Tactic:** Cultivation Theory / Mean World Syndrome
+
+**Fact Check:**
+- Crime rates in many cities have been falling for decades, and violent crime is not at historic highs.
+- The perception of rising crime is often out of proportion to actual data (Bureau of Justice Statistics).`
       },
       {
         id: 'reflection-psychology',
