@@ -34,46 +34,131 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Initialize user authentication
+  // Initialize user authentication with fallback
   useEffect(() => {
-    const unsubscribe = onAuthStateChange(async (authUser) => {
-      if (authUser) {
-        setUser(authUser);
-        // Load user progress
-        try {
-          const progress = await getUserProgress(authUser.uid);
-          if (progress) {
-            setUserProgress(progress);
+    const initializeAuth = async () => {
+      try {
+        const unsubscribe = onAuthStateChange(async (authUser) => {
+          if (authUser) {
+            setUser(authUser);
+            // Load user progress
+            try {
+              const progress = await getUserProgress(authUser.uid);
+              if (progress) {
+                setUserProgress(progress);
+              } else {
+                // Initialize new user progress
+                const newProgress: UserProgress = {
+                  userId: authUser.uid,
+                  currentModule: '',
+                  currentSection: 0,
+                  completedModules: [],
+                  completedSections: {},
+                  reflections: {},
+                  quizScores: {},
+                };
+                setUserProgress(newProgress);
+                await saveUserProgress(authUser.uid, newProgress);
+              }
+            } catch (error) {
+              console.error('Error loading user progress:', error);
+              // Fallback: create local progress
+              const fallbackProgress: UserProgress = {
+                userId: authUser.uid,
+                currentModule: '',
+                currentSection: 0,
+                completedModules: [],
+                completedSections: {},
+                reflections: {},
+                quizScores: {},
+              };
+              setUserProgress(fallbackProgress);
+            }
           } else {
-            // Initialize new user progress
-            const newProgress: UserProgress = {
-              userId: authUser.uid,
-              currentModule: '',
-              currentSection: 0,
-              completedModules: [],
-              completedSections: {},
-              reflections: {},
-              quizScores: {},
-            };
-            setUserProgress(newProgress);
-            await saveUserProgress(authUser.uid, newProgress);
+            // Sign in anonymously if no user
+            try {
+              const newUser = await signInUser();
+              setUser(newUser);
+            } catch (error) {
+              console.error('Error signing in user:', error);
+              // Fallback: create demo user
+              const demoUser = {
+                uid: 'demo-user-' + Date.now(),
+                email: null,
+                displayName: null,
+                photoURL: null,
+                emailVerified: false,
+                isAnonymous: true,
+                metadata: {},
+                providerData: [],
+                refreshToken: '',
+                tenantId: null,
+                phoneNumber: null,
+                providerId: 'anonymous',
+                delete: async () => {},
+                getIdToken: async () => '',
+                getIdTokenResult: async () => ({ authTime: '', issuedAtTime: '', signInProvider: null, signInSecondFactor: null, token: '', expirationTime: '', claims: {} }),
+                reload: async () => {},
+                toJSON: () => ({}),
+              } as unknown as User;
+              setUser(demoUser);
+              
+              // Create demo progress
+              const demoProgress: UserProgress = {
+                userId: demoUser.uid,
+                currentModule: '',
+                currentSection: 0,
+                completedModules: [],
+                completedSections: {},
+                reflections: {},
+                quizScores: {},
+              };
+              setUserProgress(demoProgress);
+            }
           }
-        } catch (error) {
-          console.error('Error loading user progress:', error);
-        }
-      } else {
-        // Sign in anonymously if no user
-        try {
-          const newUser = await signInUser();
-          setUser(newUser);
-        } catch (error) {
-          console.error('Error signing in user:', error);
-        }
-      }
-      setIsLoading(false);
-    });
+          setIsLoading(false);
+        });
 
-    return () => unsubscribe();
+        return () => unsubscribe();
+      } catch (error) {
+        console.error('Firebase initialization failed, using demo mode:', error);
+        // Complete fallback: demo mode
+        const demoUser = {
+          uid: 'demo-user-' + Date.now(),
+          email: null,
+          displayName: null,
+          photoURL: null,
+          emailVerified: false,
+          isAnonymous: true,
+          metadata: {},
+          providerData: [],
+          refreshToken: '',
+          tenantId: null,
+          phoneNumber: null,
+          providerId: 'anonymous',
+          delete: async () => {},
+          getIdToken: async () => '',
+          getIdTokenResult: async () => ({ authTime: '', issuedAtTime: '', signInProvider: null, signInSecondFactor: null, token: '', expirationTime: '', claims: {} }),
+          reload: async () => {},
+          toJSON: () => ({}),
+        } as unknown as User;
+        setUser(demoUser);
+        
+        const demoProgress: UserProgress = {
+          userId: demoUser.uid,
+          currentModule: '',
+          currentSection: 0,
+          completedModules: [],
+          completedSections: {},
+          reflections: {},
+          quizScores: {},
+        };
+        setUserProgress(demoProgress);
+        setIsLoading(false);
+      }
+    };
+
+    initializeAuth();
   }, []);
 
   // Listen to real-time progress updates
@@ -99,6 +184,8 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
       await saveUserProgress(user.uid, updatedProgress);
     } catch (error) {
       console.error('Error updating progress:', error);
+      // In demo mode, just update local state
+      console.log('Demo mode: Progress updated locally');
     }
   };
 
@@ -118,6 +205,15 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
       }
     } catch (error) {
       console.error('Error saving reflection:', error);
+      // In demo mode, just update local state
+      if (userProgress) {
+        const updatedReflections = {
+          ...userProgress.reflections,
+          [`${moduleId}_${sectionId}`]: reflection,
+        };
+        setUserProgress({ ...userProgress, reflections: updatedReflections });
+        console.log('Demo mode: Reflection saved locally');
+      }
     }
   };
 
@@ -128,6 +224,10 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
       return await getReflection(user.uid, moduleId, sectionId);
     } catch (error) {
       console.error('Error getting reflection:', error);
+      // In demo mode, return from local state
+      if (userProgress?.reflections) {
+        return userProgress.reflections[`${moduleId}_${sectionId}`] || null;
+      }
       return null;
     }
   };
